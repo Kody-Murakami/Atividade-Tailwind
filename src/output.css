@@ -34,8 +34,16 @@
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
+    --color-pink-100: oklch(94.8% 0.028 342.258);
     --color-pink-200: oklch(89.9% 0.061 343.231);
+    --color-pink-300: oklch(82.3% 0.12 346.018);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
+    --color-pink-600: oklch(59.2% 0.249 0.584);
     --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -412,6 +420,9 @@
   .bg-amber-800 {
     background-color: var(--color-amber-800);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-blue-200 {
     background-color: var(--color-blue-200);
   }
@@ -436,6 +447,9 @@
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-gray-600 {
+    background-color: var(--color-gray-600);
+  }
   .bg-green-100 {
     background-color: var(--color-green-100);
   }
@@ -445,8 +459,14 @@
   .bg-green-500 {
     background-color: var(--color-green-500);
   }
+  .bg-pink-100 {
+    background-color: var(--color-pink-100);
+  }
   .bg-pink-200 {
     background-color: var(--color-pink-200);
+  }
+  .bg-pink-600 {
+    background-color: var(--color-pink-600);
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
@@ -673,6 +693,56 @@
   .focus\:bg-teal-600 {
     &:focus {
       background-color: var(--color-teal-600);
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:bg-gray-700 {
+    @media (width >= 40rem) {
+      background-color: var(--color-gray-700);
+    }
+  }
+  .sm\:bg-pink-200 {
+    @media (width >= 40rem) {
+      background-color: var(--color-pink-200);
+    }
+  }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
+    }
+  }
+  .md\:bg-gray-800 {
+    @media (width >= 48rem) {
+      background-color: var(--color-gray-800);
+    }
+  }
+  .md\:bg-pink-300 {
+    @media (width >= 48rem) {
+      background-color: var(--color-pink-300);
+    }
+  }
+  .lg\:flex-col {
+    @media (width >= 64rem) {
+      flex-direction: column;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
+  .lg\:bg-gray-900 {
+    @media (width >= 64rem) {
+      background-color: var(--color-gray-900);
+    }
+  }
+  .lg\:bg-pink-400 {
+    @media (width >= 64rem) {
+      background-color: var(--color-pink-400);
     }
   }
 }
