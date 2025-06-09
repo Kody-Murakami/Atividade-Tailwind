@@ -285,6 +285,9 @@
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
+  .w-\[33px\] {
+    width: 33px;
+  }
   .w-auto {
     width: auto;
   }
@@ -436,6 +439,9 @@
   }
   .bg-teal-500 {
     background-color: var(--color-teal-500);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
